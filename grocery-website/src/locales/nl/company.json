@@ -1,0 +1,64 @@
+{
+  "company": {
+    "logistics": {
+      "aria": "Logistiek en Distributie",
+      "title_line1": "Moderne Logistiek",
+      "title_line2": "Efficiënte Distributie",
+      "intro": "SN Food Distribution beheert een robuuste supply chain om uitmuntendheid bij elke levering te garanderen.",
+      "p1": "Ons magazijn van 200m² in Bruay-sur-l'Escaut is het hart van onze activiteiten, geoptimaliseerd voor een snelle doorloop.",
+      "p2": "Met een modern wagenpark van koelwagens handhaven we de koudeketen en garanderen we de productintegriteit.",
+      "p3": "Wij leveren in de hele regio binnen 24 tot 48 uur en bieden een betrouwbare service aan al onze partners."
+    },
+    "values": {
+      "subtitle": "Onze Kernwaarden",
+      "title": "Kwaliteit, Betrouwbaarheid & Vertrouwen",
+      "intro": "Bij SN Food Distribution streven we naar uitmuntendheid in alles wat we doen.",
+      "quality_title": "Premium Kwaliteit",
+      "quality_desc": "Wij betrekken alleen de beste authentieke producten van wereldwijde leveranciers.",
+      "integrity_title": "Integriteit",
+      "integrity_desc": "Transparantie en eerlijkheid vormen de basis van onze zakelijke relaties.",
+      "commitment_title": "Klantbetrokkenheid",
+      "commitment_desc": "Uw succes is onze prioriteit. Wij doen er alles aan om uw bedrijf te ondersteunen."
+    },
+    "why_sn": {
+      "subtitle": "Waarom voor ons kiezen",
+      "title": "Waarom SN Food Distribution?",
+      "intro": "Wij overbruggen de kloof tussen authentieke wereldwijde smaken en uw lokale bedrijf met uitmuntendheid.",
+      "reason1_title": "Snelle Levering",
+      "reason1_desc": "Wij zorgen voor snelle en betrouwbare leveringsdiensten in de hele regio.",
+      "reason2_title": "Premium Kwaliteit",
+      "reason2_desc": "Alleen de beste authentieke Afrikaanse en Aziatische producten voor onze klanten.",
+      "reason3_title": "Betrouwbare Partner",
+      "reason3_desc": "Een betrouwbare partner voor restaurants en retailers sinds onze oprichting.",
+      "reason4_title": "Beste Prijzen",
+      "reason4_desc": "Concurrerende groothandelsprijzen om uw bedrijf te helpen groeien."
+    },
+    "hero": {
+      "title_line1": "SN is een groothandel",
+      "title_line2": "distributeur van Afrikaanse & Aziatische voedingsmiddelen",
+      "text": "SN Food Distribution is gevestigd in Bruay-sur-l’Escaut en levert aan restaurants, gespecialiseerde supermarkten en voedingswinkels met een betrouwbaar assortiment authentieke producten.",
+      "cta": "DE CATALOGUS"
+    },
+    "history": {
+      "title": "Bedrijfsgeschiedenis",
+      "p1": "SN Food Distribution is opgericht om te voldoen aan de groeiende vraag naar Afrikaanse en Aziatische voedingsmiddelen in de regio Hauts-de-France.",
+      "p2": "Het bedrijf is gevestigd in Bruay-sur-l’Escaut en is gestaag gegroeid door het productassortiment uit te breiden en het netwerk van internationale leveranciers te versterken.",
+      "p3": "Vandaag de dag is SN Food Distribution een betrouwbare partner voor restaurants, gespecialiseerde supermarkten en voedingswinkels."
+    },
+    "promo": {
+      "years": "Jaar Ervaring"
+    },
+    "brands": {
+      "aria": "Al onze merken",
+      "title": "Al onze merken",
+      "see_all": "Bekijk alles",
+      "sub": "SN Food Distribution werkt met een breed scala aan internationale merken en brengt u authentieke smaken uit Afrika en Azië. We selecteren alleen gecertificeerde partners om de beste kwaliteit voor onze klanten te garanderen."
+    },
+    "request_info": {
+      "aria": "Informatie aanvragen",
+      "title": "Informatie aanvragen",
+      "text": "SN Food Distribution staat tot uw beschikking voor elke behoefte: neem vandaag nog contact met ons op voor informatie over onze producten en diensten.",
+      "cta": "CONTACTEER ONS"
+    }
+  }
+}
