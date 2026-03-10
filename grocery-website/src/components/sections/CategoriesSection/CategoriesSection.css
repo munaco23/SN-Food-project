@@ -1,0 +1,174 @@
+.cats {
+  width: 100%;
+  background: #ffffff;
+  padding: 54px 0 64px;
+  overflow: hidden;
+}
+
+.cats-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cats-head {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.cats-title {
+  margin: 0;
+font-family: var(--font-montserrat);
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.cats-subtitle {
+  margin: 0;
+  max-width: 600px;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #374151;
+}
+
+.cats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 38px 20px;
+}
+
+.cat-card {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: opacity 160ms ease;
+}
+
+.cat-card:hover {
+  opacity: 0.92;
+}
+
+.cat-iconWrap {
+  width: 104px;
+  height: 104px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  color: #24314d;
+  font-size: 30px;
+}
+
+.cat-iconWrap[data-color='blue'] {
+  color: #2563eb;
+}
+
+.cat-iconWrap[data-color='red'] {
+  color: #ef4444;
+}
+
+.cat-iconWrap[data-color='orange'] {
+  color: #f97316;
+}
+
+.cat-iconWrap[data-color='green'] {
+  color: #22c55e;
+}
+
+.cat-iconWrap[data-color='yellow'] {
+  color: #f59e0b;
+}
+
+.cat-iconWrap[data-color='lime'] {
+  color: #84cc16;
+}
+
+.cat-label {
+  text-align: center;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  line-height: 1.25;
+}
+
+@media (max-width: 1024px) {
+  .cats {
+    padding: 40px 0 50px;
+  }
+
+  .cats-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cats-title {
+    font-size: 28px;
+  }
+
+  .cats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
+
+  .cat-iconWrap {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .cat-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 15px;
+  }
+
+  .cats-title {
+    font-size: 24px;
+  }
+
+  .cats-subtitle {
+    font-size: 14px;
+  }
+
+  .cat-iconWrap {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cats-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 10px;
+  }
+
+  .cat-iconWrap {
+    width: 65px;
+    height: 65px;
+  }
+}

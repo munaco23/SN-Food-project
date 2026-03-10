@@ -1,0 +1,125 @@
+.orders-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 600px;
+}
+
+.orders-table th {
+  background: #f8fafc;
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.orders-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #1e293b;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.orders-table tr:hover td {
+  background: #f8fafc;
+}
+
+.order-id {
+  font-weight: 700;
+  color: var(--navy-blue);
+}
+
+.order-total {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-draft {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.status-sent {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-sale {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-done {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status-cancel {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.empty-state i {
+  font-size: 64px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.empty-state p {
+  margin-bottom: 30px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.browse-btn {
+  height: 48px;
+  padding: 0 32px;
+  background: var(--navy-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.browse-btn:hover {
+  background: #1a2337;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(36, 49, 77, 0.15);
+}
+
+@media (max-width: 640px) {
+  .orders-table th, .orders-table td {
+    padding: 12px;
+  }
+}
