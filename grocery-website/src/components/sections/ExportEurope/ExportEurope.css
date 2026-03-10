@@ -1,0 +1,132 @@
+.ee {
+  width: 100%;
+  background: #ffffff;
+  padding: 70px 0 84px;
+  overflow: hidden;
+}
+
+.ee-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.ee-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.ee-copy {
+  max-width: 920px;
+}
+
+.ee-title {
+  margin: 0;
+font-family: var(--font-montserrat);
+  font-size: clamp(38px, 3.5vw, 58px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+
+.ee-text {
+  margin: 16px 0 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(17, 24, 39, 0.78);
+  max-width: 760px;
+}
+
+.ee-arrow {
+  margin-top: 52px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  background: #ffffff;
+  color: rgba(17, 24, 39, 0.65);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ee-arrow:hover {
+  border-color: rgba(36, 49, 77, 0.24);
+  color: #24314d;
+}
+
+.ee-rail {
+  margin-top: 34px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+.ee-rail::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.ee-rail.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.ee-item {
+  flex: 0 0 calc((100% - (7 * 20px)) / 8);
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-width: 100px;
+  scroll-snap-align: start;
+}
+
+.ee-flag {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ee-flagImg {
+  width: 52px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.08),
+    0 8px 18px rgba(17, 24, 39, 0.10);
+}
+
+.ee-name {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(17, 24, 39, 0.72);
+}
+
+@media (max-width: 700px) {
+  .ee-arrow {
+    margin-top: 24px;
+  }
+
+  .ee-rail {
+    gap: 28px;
+  }
+}

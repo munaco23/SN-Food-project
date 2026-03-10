@@ -1,0 +1,69 @@
+.account-page {
+  background: #ffffff;
+}
+
+.account-hero {
+  background-image: linear-gradient(90deg, rgba(1, 21, 65, 0.92) 0%, rgba(1, 21, 65, 0.78) 55%, rgba(1, 21, 65, 0.55) 100%), url('../../Images/hero2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.account-hero h1 {
+  font-family: var(--font-montserrat);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.account-crumbs {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.account-crumbs .active {
+  color: #f4c550;
+  font-weight: 600;
+}
+
+.account-main {
+  padding: 40px 0;
+  background: #ffffff;
+  min-height: 600px;
+}
+
+.account-container {
+  width: 98%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  .account-hero {
+    padding: 48px 0;
+  }
+
+  .account-main {
+    padding: 32px 0;
+  }
+
+  .account-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .account-container {
+    padding: 0 12px;
+  }
+}
