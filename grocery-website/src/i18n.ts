@@ -7,6 +7,7 @@ import companyEn from './locales/en/company.json';
 import companyUr from './locales/ur/company.json';
 import companyLn from './locales/ln/company.json';
 import companyNl from './locales/nl/company.json';
+import companyFr from './locales/fr/company.json';
 
 const resources = {
   ur: {
@@ -1357,6 +1358,7 @@ const resources = {
   },
   fr: {
     translation: {
+      ...companyFr,
       "nav": {
         "home": "Accueil",
         "company": "Entreprise",
@@ -1404,6 +1406,72 @@ const resources = {
           "instagram": "Instagram",
           "tiktok": "TikTok"
         }
+      },
+      "discover": {
+        "title": "Votre partenaire d'excellence",
+        "subtitle": "SN Food Distribution fournit des produits africains et asiatiques de qualité premium directement aux professionnels. Dynamisez votre activité avec des saveurs authentiques et un service de gros fiable.",
+        "cta": "EXPLORER LE CATALOGUE"
+      },
+      "feature_highlights": {
+        "free_shipping": "Livraison gratuite",
+        "free_shipping_desc": "Sur les commandes de plus de 150 €",
+        "save_money": "Économisez de l'argent",
+        "save_money_desc": "Prix de gros directs",
+        "quality_assured": "Qualité garantie",
+        "quality_assured_desc": "Produits 100% premium",
+        "best_deal": "Meilleures offres",
+        "best_deal_desc": "Remises B2B exclusives",
+        "support": "Support 24/7",
+        "support_desc": "Assistance d'experts"
+      },
+      "categories_section": {
+        "title": "Couleurs et saveurs du monde entier",
+        "subtitle": "Des milliers de produits du monde entier sur votre table. Une seule entreprise pour chaque catégorie de produits : Frais, Secs, Surgelés et Cosmétiques",
+        "items": {
+          "dairy": "Produits laitiers & œufs",
+          "meat": "Viandes & volailles",
+          "bakery": "Boulangerie",
+          "organic": "Produits bio",
+          "fresh_eggs": "Œufs frais",
+          "ready_meals": "Salades & plats cuisinés"
+        }
+      },
+      "feature_strip": {
+        "kicker": "Notre héritage",
+        "title": "Relier les continents par des saveurs authentiques",
+        "text1": "SN Food Distribution se consacre à l'approvisionnement des meilleurs produits ethniques à travers l'Afrique et l'Asie. Notre mission est de donner aux professionnels les moyens d'utiliser des ingrédients authentiques qui racontent une histoire de tradition, de qualité et de passion.",
+        "text2": "Nous pensons que la nourriture est plus qu'une simple subsistance ; c'est un langage universel qui nous unit tous. Grâce à une logistique fiable et un contrôle qualité strict.",
+        "vision1_title": "Qualité inégalée",
+        "vision1_desc": "Sourcing uniquement de produits de qualité supérieure pour nos partenaires.",
+        "vision2_title": "Connexion mondiale",
+        "vision2_desc": "Liens directs avec des producteurs authentiques sur deux continents.",
+        "vision3_title": "Sourcing durable",
+        "vision3_desc": "Pratiques éthiques soutenant les communautés locales dans le monde entier."
+      },
+      "promo": {
+        "badge": "Excellence de gros",
+        "title": "Solutions alimentaires premium",
+        "text": "Devenez partenaire de SN Food Distribution pour des produits ethniques exclusifs, une logistique évolutive et des prix de gros compétitifs.",
+        "smart_logistics": "Logistique intelligente",
+        "competitive_rates": "Tarifs compétitifs",
+        "become_partner": "Devenir partenaire",
+        "catalog": "Catalogue",
+        "years": "Années",
+        "offers_title": "Voulez-vous des offres ?",
+        "offers_sub": "Inscrivez-vous gratuitement à notre newsletter !",
+        "email_placeholder": "Votre e-mail",
+        "signup_btn": "S'INSCRIRE",
+        "terms_accept": "J'ai lu et j'accepte les conditions générales et la politique de confidentialité"
+      },
+      "extra_sections": {
+        "pow_title": "Produit de la semaine",
+        "events_title": "Événements",
+        "events_subtitle": "Ce qui se passe dans le monde de SN Food",
+        "events_go_to": "Aller à la page des événements"
+      },
+      "export": {
+        "title": "Nous livrons partout",
+        "text": "SN Food Distribution distribue dans toute la région et au-delà. Nos produits sont sélectionnés pour répondre aux besoins des professionnels avec une logistique contrôlée."
       },
       "footer": {
         "brand_alt": "SN Food",
@@ -1712,40 +1780,6 @@ const resources = {
           "text": "Enregistrez vos articles favoris ici pour les acheter plus tard.",
           "cta": "Acheter maintenant"
         }
-      },
-      "discover": {
-        "title": "Votre partenaire d'excellence",
-        "subtitle": "SN Food Distribution fournit des produits africains et asiatiques de qualité premium directement aux professionnels. Dynamisez votre activité avec des saveurs authentiques et un service de gros fiable.",
-        "cta": "EXPLORER LE CATALOGUE"
-      },
-      "feature_strip": {
-        "title": "Nous vous apportons le goût de chez vous",
-        "text": "SN Food Distribution est une entreprise de référence pour l'importation de produits alimentaires ethniques, répondant à la demande croissante de produits africains et asiatiques. Chaque jour, nous distribuons les meilleurs produits du monde entier aux magasins et grossistes, avec un service de livraison fiable.",
-        "company": "Entreprise",
-        "history": "Notre Histoire",
-        "brand_highlight": "Distributeur de confiance pour les professionnels de la restauration et les épiceries spécialisées.",
-        "leader_title": "Leader dans la distribution de produits ethniques",
-        "leader_text": "Gestion d'entrepôt optimisée et flotte de véhicules moderne. Produits toujours disponibles et livraison fiable dans toute la région.",
-        "stats": {
-          "storage": "200 m2 de Stockage",
-          "storage_text": "Entrepôt principal situé à Bruay-sur-l’Escaut, optimisé pour les produits secs, frais et surgelés.",
-          "fleet": "Flotte Moderne",
-          "fleet_text": "Une flotte de véhicules utilitaires et de camions frigorifiques pour respecter la chaîne du froid.",
-          "delivery": "24 à 48 Heures",
-          "delivery_text": "Toutes les commandes sont traitées rapidement pour une livraison sous 24h à 48h.",
-          "import": "Importation Internationale",
-          "import_text": "Nous importons des produits authentiques d'Afrique de l'Ouest, d'Afrique Centrale, d'Asie et du Moyen-Orient."
-        }
-      },
-      "values": {
-        "title": "Nos Valeurs",
-        "sub": "Qualité, Fiabilité et Respect",
-        "text": "Chez SN Food Distribution, nous plaçons la qualité, la fiabilité et le respect au cœur de notre activité. Nous cultivons un environnement de travail dynamique et collaboratif, où chaque membre de l'équipe contribue activement à la satisfaction de nos clients. Notre équipe bénéficie de plus de 15 ans d'expérience combinée dans le secteur de l'import-export et de la distribution alimentaire.",
-        "cta": "Découvrir notre équipe"
-      },
-      "export": {
-        "title": "Nous livrons partout",
-        "text": "SN Food Distribution livre dans toute la région et au-delà. Nos produits sont sélectionnés pour répondre aux exigences des professionnels avec une logistique contrôlée."
       },
       "catalog": {
         "title": "Un large catalogue dédié aux professionnels de l'alimentation",
@@ -2178,7 +2212,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    supportedLngs: ['en', 'ur', 'ln', 'nl'],
+    supportedLngs: ['en', 'ur', 'ln', 'nl', 'fr'],
     nonExplicitSupportedLngs: true,
     fallbackLng: 'en',
     detection: {

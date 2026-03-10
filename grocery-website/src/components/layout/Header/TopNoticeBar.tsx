@@ -6,6 +6,7 @@ const LANGUAGES = [
   { code: 'ur', label: 'اردو', flag: 'https://flagcdn.com/w40/pk.png' },
   { code: 'ln', label: 'Lingála', flag: 'https://flagcdn.com/w40/cd.png' },
   { code: 'nl', label: 'Nederlands', flag: 'https://flagcdn.com/w40/nl.png' },
+  { code: 'fr', label: 'Français', flag: 'https://flagcdn.com/w40/fr.png' },
 ];
 
 export const TopNoticeBar: React.FC = () => {

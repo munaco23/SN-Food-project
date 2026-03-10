@@ -1,0 +1,64 @@
+{
+  "company": {
+    "logistics": {
+      "aria": "Logistique et Distribution",
+      "title_line1": "Logistique Moderne",
+      "title_line2": "Distribution Efficace",
+      "intro": "SN Food Distribution gère une chaîne d'approvisionnement robuste pour garantir l'excellence à chaque livraison.",
+      "p1": "Notre entrepôt de 200m² à Bruay-sur-l'Escaut est le cœur de nos opérations, optimisé pour une rotation rapide.",
+      "p2": "Avec une flotte moderne de véhicules frigorifiques, nous maintenons la chaîne du froid et garantissons l'intégrité des produits.",
+      "p3": "Nous livrons dans toute la région sous 24 à 48 heures, offrant un service fiable à tous nos partenaires."
+    },
+    "values": {
+      "subtitle": "Nos Valeurs Fondamentales",
+      "title": "Qualité, Fiabilité et Confiance",
+      "intro": "Chez SN Food Distribution, nous nous engageons à l'excellence dans tout ce que nous faisons.",
+      "quality_title": "Qualité Premium",
+      "quality_desc": "Nous ne sélectionnons que les meilleurs produits authentiques auprès de fournisseurs mondiaux.",
+      "integrity_title": "Intégrité",
+      "integrity_desc": "La transparence et l'honnêteté sont à la base de nos relations commerciales.",
+      "commitment_title": "Engagement Client",
+      "commitment_desc": "Votre succès est notre priorité. Nous nous dépassons pour soutenir votre entreprise."
+    },
+    "why_sn": {
+      "subtitle": "Pourquoi Nous Choisir",
+      "title": "Pourquoi SN Food Distribution ?",
+      "intro": "Nous comblons le fossé entre les saveurs authentiques du monde et votre entreprise locale avec excellence.",
+      "reason1_title": "Livraison Rapide",
+      "reason1_desc": "Nous assurons des services de livraison rapides et fiables dans toute la région.",
+      "reason2_title": "Qualité Premium",
+      "reason2_desc": "Seuls les meilleurs produits africains et asiatiques authentiques pour nos clients.",
+      "reason3_title": "Partenaire de Confiance",
+      "reason3_desc": "Un partenaire fiable pour les restaurants et les détaillants depuis notre fondation.",
+      "reason4_title": "Meilleurs Prix",
+      "reason4_desc": "Des prix de gros compétitifs pour aider votre entreprise à se développer."
+    },
+    "hero": {
+      "title_line1": "SN est un grossiste",
+      "title_line2": "distributeur de produits alimentaires africains et asiatiques",
+      "text": "Basé à Bruay-sur-l'Escaut, SN Food Distribution approvisionne les restaurants, les épiceries spécialisées et les détaillants alimentaires avec une sélection fiable de produits authentiques.",
+      "cta": "LE CATALOGUE"
+    },
+    "history": {
+      "title": "Historique de l'entreprise",
+      "p1": "SN Food Distribution a été créée pour répondre à la demande croissante de produits alimentaires africains et asiatiques dans la région Hauts-de-France.",
+      "p2": "Basée à Bruay-sur-l'Escaut, l'entreprise s'est développée régulièrement en élargissant sa gamme de produits et en renforçant son réseau de fournisseurs internationaux.",
+      "p3": "Aujourd'hui, SN Food Distribution est un partenaire de confiance pour les restaurants, les épiceries spécialisées et les détaillants alimentaires."
+    },
+    "promo": {
+      "years": "Années d'Expérience"
+    },
+    "brands": {
+      "aria": "Toutes nos marques",
+      "title": "Toutes nos marques",
+      "see_all": "Voir tout",
+      "sub": "SN Food Distribution travaille avec une large gamme de marques internationales, vous apportant des saveurs authentiques d'Afrique et d'Asie. Nous sélectionnons uniquement des partenaires certifiés pour garantir la meilleure qualité à nos clients."
+    },
+    "request_info": {
+      "aria": "Demande d'informations",
+      "title": "Demande d'informations",
+      "text": "SN Food Distribution est à votre disposition pour tout besoin : contactez-nous dès aujourd'hui pour toute question sur nos produits et services.",
+      "cta": "CONTACTEZ-NOUS"
+    }
+  }
+}
