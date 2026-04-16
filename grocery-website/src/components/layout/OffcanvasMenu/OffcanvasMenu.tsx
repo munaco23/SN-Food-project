@@ -5,13 +5,19 @@ import './OffcanvasMenu.css';
 import { getWishlistCount } from '../../../utils/wishlist';
 import { getCartCount } from '../../../utils/cart';
 
+type NavItem = {
+  key: string;
+  path: string;
+  children?: { key: string; path: string }[];
+};
+
 type OffcanvasMenuProps = {
   isOpen: boolean;
   onClose: () => void;
   onCartClick: () => void;
 };
 
-const MENU_ITEMS = [
+const MENU_ITEMS: NavItem[] = [
   { key: 'home', path: '/' },
   { key: 'account', path: '/account' },
   {
@@ -24,9 +30,7 @@ const MENU_ITEMS = [
       { key: 'vendors', path: '/vendors' },
     ]
   },
-  { key: 'catalogs', path: '/catalogs' },
   { key: 'brands', path: '/brands' },
-  { key: 'events', path: '/events' },
   { key: 'new_arrivals', path: '/new-arrivals' },
   { key: 'contact', path: '/contact' },
 ];
@@ -137,7 +141,7 @@ export const OffcanvasMenu: React.FC<OffcanvasMenuProps> = ({ isOpen, onClose, o
           </div>
 
           <nav className="offcanvas-nav" aria-label={t('offcanvas.menu')}>
-            {MENU_ITEMS.map((item) => (
+            {MENU_ITEMS.map((item: NavItem) => (
               <div key={item.key} className="offcanvas-nav-group">
                 <div className="offcanvas-nav-row">
                   {item.path === '#' ? (
@@ -169,7 +173,7 @@ export const OffcanvasMenu: React.FC<OffcanvasMenuProps> = ({ isOpen, onClose, o
                 </div>
                 {item.key === 'pages' && item.children && (
                   <div className={`offcanvas-submenu ${isPagesOpen ? 'offcanvas-submenu--open' : ''}`}>
-                    {item.children.map((child) => (
+                    {item.children.map((child: { key: string; path: string }) => (
                       <Link
                         key={child.key}
                         to={child.path}

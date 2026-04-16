@@ -15,6 +15,7 @@ const resources = {
       ...companyUr,
       "nav": {
         "home": "ہوم",
+        "account": "اکاؤنٹ",
         "company": "کمپنی",
         "team": "ٹیم",
         "vendors": "وینڈرز",
@@ -320,6 +321,7 @@ const resources = {
       ...companyLn,
       "nav": {
         "home": "Ndako",
+        "account": "Compte",
         "company": "Kompanyi",
         "team": "Ekipi",
         "vendors": "Bateki",
@@ -617,6 +619,7 @@ const resources = {
       ...companyNl,
       "nav": {
         "home": "Home",
+        "account": "Account",
         "company": "Bedrijf",
         "team": "Team",
         "vendors": "Leveranciers",
@@ -914,6 +917,7 @@ const resources = {
       ...companyEn,
       "nav": {
         "home": "Home",
+        "account": "Account",
         "company": "Company",
         "team": "Team",
         "vendors": "Vendors",
@@ -1361,6 +1365,7 @@ const resources = {
       ...companyFr,
       "nav": {
         "home": "Accueil",
+        "account": "Compte",
         "company": "Entreprise",
         "team": "Équipe",
         "vendors": "Fournisseurs",
@@ -1801,6 +1806,7 @@ const resources = {
     translation: {
       "nav": {
         "home": "Home",
+        "account": "Account",
         "company": "Azienda",
         "team": "Team",
         "vendors": "Fornitori",

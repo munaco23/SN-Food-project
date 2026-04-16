@@ -1,18 +1,20 @@
 const express = require('express');
 const cors = require('cors');
 const odoo = require('odoo-xmlrpc');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const checkoutRoutes = require('./routes/checkoutRoutes');
 const accountRoutes = require('./routes/accountRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Routes
 app.use('/api/products', productRoutes);
@@ -20,6 +22,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/checkout', checkoutRoutes);
 app.use('/api/account', accountRoutes);
+app.use('/api/contact', contactRoutes);
 
 // Health Check
 app.get('/health', (req, res) => {

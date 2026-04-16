@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { API_BASE_URL } from '../../../utils/api';
 
+type NavItem = {
+  key: string;
+  path: string;
+  children?: { key: string; path: string }[];
+};
+
 type Category = {
   id: string;
   name: string;
@@ -26,7 +32,7 @@ const getIconForCategory = (name: string) => {
   return CATEGORY_ICONS.Default;
 };
 
-const NAV_ITEMS = [
+const NAV_ITEMS: NavItem[] = [
   { key: 'home', path: '/' },
   {
     key: 'pages',
@@ -38,9 +44,7 @@ const NAV_ITEMS = [
       { key: 'vendors', path: '/vendors' },
     ],
   },
-  { key: 'catalogs', path: '/catalogs' },
   { key: 'brands', path: '/brands' },
-  { key: 'events', path: '/events' },
   { key: 'new_arrivals', path: '/new-arrivals' },
   { key: 'contact', path: '/contact' },
 ];
@@ -180,7 +184,7 @@ export const CategoryBar: React.FC = () => {
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
         >
-          {NAV_ITEMS.map((item) => {
+          {NAV_ITEMS.map((item: NavItem) => {
             if (item.path === '#' && item.key === 'pages' && item.children) {
               return (
                 <div key={item.key} className="category-nav-item category-nav-item--dropdown">
@@ -195,7 +199,7 @@ export const CategoryBar: React.FC = () => {
                   </button>
 
                   <div className="category-nav-menu" role="menu">
-                    {item.children.map((child) => (
+                    {item.children.map((child: { key: string; path: string }) => (
                       <Link
                         key={child.key}
                         to={child.path}

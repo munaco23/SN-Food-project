@@ -34,7 +34,6 @@ export const Footer: React.FC = () => {
               <li><Link to="/">{t('nav.home')}</Link></li>
               <li><Link to="/company">{t('nav.company')}</Link></li>
               <li><Link to="/team">{t('nav.team')}</Link></li>
-              <li><Link to="/catalogs">{t('footer.catalogues')}</Link></li>
               <li><Link to="/events">{t('nav.events')}</Link></li>
             </ul>
           </div>

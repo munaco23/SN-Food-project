@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './BrandsGrid.css';
-import Logo from '../../../Images/Logo.jpeg';
 
 type Brand = {
   id: string;
@@ -9,16 +9,47 @@ type Brand = {
   imageSrc: string;
 };
 
+const toTitleCase = (value: string) =>
+  value
+    .split(' ')
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+
+const nameFromFilename = (filename: string) => {
+  const raw = filename.replace(/^\.\//, '');
+  const withoutExt = raw.replace(/\.(png|jpe?g|gif|webp)$/i, '').replace(/\.(png|jpe?g|gif|webp)$/i, '');
+  const withoutPrefix = withoutExt.replace(/^[0-9a-f]+_/i, '').replace(/^[0-9]+_/i, '');
+  const cleaned = withoutPrefix
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return toTitleCase(cleaned);
+};
+
+const getBrandItems = (): Brand[] => {
+  const ctx = (require as any).context('../../../Images/Brands', false, /\.(png|jpe?g|gif|webp)$/i);
+  const keys: string[] = ctx.keys();
+
+  return keys
+    .map((key, index) => {
+      const mod = ctx(key);
+      const src: string = (mod && mod.default) || mod;
+      return {
+        id: `b${index + 1}`,
+        name: nameFromFilename(key),
+        imageSrc: src,
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+};
+
 export const BrandsGrid: React.FC = () => {
   const { t } = useTranslation();
 
   const brands = useMemo<Brand[]>(
-    () =>
-      Array.from({ length: 16 }).map((_, i) => ({
-        id: `b${i + 1}`,
-        name: `Brand ${i + 1}`,
-        imageSrc: Logo,
-      })),
+    () => getBrandItems().slice(0, 16),
     []
   );
 
@@ -27,7 +58,7 @@ export const BrandsGrid: React.FC = () => {
       <div className="bg-inner">
         <header className="bg-head">
           <h2 className="bg-title">{t('company.brands.title')}</h2>
-          <button className="bg-see" type="button">{t('company.brands.see_all')}</button>
+          <Link className="bg-see" to="/brands">{t('company.brands.see_all')}</Link>
         </header>
 
         <p className="bg-sub">
@@ -36,9 +67,10 @@ export const BrandsGrid: React.FC = () => {
 
         <div className="bg-grid">
           {brands.map((b) => (
-            <button key={b.id} className="bg-card" type="button" aria-label={b.name}>
+            <Link key={b.id} className="bg-card" to="/brands" aria-label={b.name}>
               <img className="bg-logo" src={b.imageSrc} alt={b.name} />
-            </button>
+              <span className="bg-name">{b.name}</span>
+            </Link>
           ))}
         </div>
       </div>

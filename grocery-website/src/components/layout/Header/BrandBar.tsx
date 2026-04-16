@@ -8,7 +8,6 @@ const NAV_ITEMS = [
   { key: 'vendors', path: '/vendors' },
   { key: 'customers', path: '/customers' },
   { key: 'events', path: '/events' },
-  { key: 'catalogs', path: '/catalogs' },
   { key: 'brands', path: '/brands' },
   { key: 'new_arrivals', path: '/new-arrivals' },
   { key: 'contact', path: '/contact' },

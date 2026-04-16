@@ -7,8 +7,6 @@ import { TopRatedSection } from '../../components/sections/TopRatedSection/TopRa
 import { DiscoverBanner } from '../../components/sections/DiscoverBanner/DiscoverBanner';
 import { CategoriesSection } from '../../components/sections/CategoriesSection/CategoriesSection';
 import { FeatureStrip } from '../../components/sections/FeatureStrip/FeatureStrip';
-import { EventsSection } from '../../components/sections/EventsSection/EventsSection';
-import { ColorsPromo } from '../../components/sections/ColorsPromo/ColorsPromo';
 import { BrandsGrid } from '../../components/sections/BrandsGrid/BrandsGrid';
 import { ExportEurope } from '../../components/sections/ExportEurope/ExportEurope';
 import { Footer } from '../../components/layout/Footer/Footer';
@@ -22,10 +20,8 @@ export const Home: React.FC = () => {
       <ProductsOfWeek />
       <DiscoverBanner />
       <CategoriesSection />
-      <TopRatedSection />
       <FeatureStrip />
-      <EventsSection />
-      <ColorsPromo />
+      <TopRatedSection />
       <BrandsGrid />
       <ExportEurope />
       <Footer />

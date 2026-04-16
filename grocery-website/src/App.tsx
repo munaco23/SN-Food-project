@@ -8,7 +8,6 @@ import { Team } from './pages/Team/Team';
 import { Vendors } from './pages/Vendors/Vendors';
 import { Customers } from './pages/Customers/Customers';
 import { Events } from './pages/Events/Events';
-import { Catalogs } from './pages/Catalogs/Catalogs';
 import { Brands } from './pages/Brands/Brands';
 import { NewArrivals } from './pages/NewArrivals/NewArrivals';
 import { Contact } from './pages/Contact/Contact';
@@ -100,7 +99,6 @@ function App() {
             <Route path="/vendors" element={<Vendors />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/catalogs" element={<Catalogs />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/new-arrivals" element={<NewArrivals />} />
             <Route path="/shop" element={<Shop />} />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './BrandsDetailGrid.css';
-import Logo from '../../../Images/Logo.jpeg';
 
 type Brand = {
   id: number;
@@ -9,29 +8,47 @@ type Brand = {
   image: string;
 };
 
-const popularBrands: Brand[] = [
-  { id: 1, name: 'Aashirvaad', image: Logo },
-  { id: 2, name: 'Aroy-D', image: Logo },
-  { id: 3, name: 'Daawat', image: Logo },
-  { id: 4, name: 'Foco', image: Logo },
-  { id: 5, name: "Haldiram's", image: Logo },
-  { id: 6, name: 'India Gate', image: Logo },
-  { id: 7, name: 'Indomie', image: Logo },
-  { id: 8, name: 'Maggi', image: Logo },
-  { id: 9, name: 'Mdh', image: Logo },
-  { id: 10, name: 'Nido', image: Logo },
-  { id: 11, name: 'Nongshim', image: Logo },
-  { id: 12, name: 'Peak', image: Logo },
-  { id: 13, name: 'Royal Umbrella', image: Logo },
-  { id: 14, name: 'Samyang', image: Logo },
-  { id: 15, name: 'Shan', image: Logo },
-  { id: 16, name: 'Spoon & Spoon', image: Logo },
-  { id: 17, name: 'Tapal', image: Logo },
-  { id: 18, name: 'Tata Tea', image: Logo },
-];
+const toTitleCase = (value: string) =>
+  value
+    .split(' ')
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+
+const nameFromFilename = (filename: string) => {
+  const raw = filename.replace(/^\.\//, '');
+  const withoutExt = raw.replace(/\.(png|jpe?g|gif|webp)$/i, '').replace(/\.(png|jpe?g|gif|webp)$/i, '');
+  const withoutPrefix = withoutExt.replace(/^[0-9a-f]+_/i, '').replace(/^[0-9]+_/i, '');
+  const cleaned = withoutPrefix
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return toTitleCase(cleaned);
+};
+
+const getBrandItems = (): Brand[] => {
+  const ctx = (require as any).context('../../../Images/Brands', false, /\.(png|jpe?g|gif|webp)$/i);
+  const keys: string[] = ctx.keys();
+
+  const items = keys
+    .map((key, index) => {
+      const mod = ctx(key);
+      const src: string = (mod && mod.default) || mod;
+      return {
+        id: index + 1,
+        name: nameFromFilename(key),
+        image: src,
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  return items;
+};
 
 export const BrandsDetailGrid: React.FC = () => {
   const { t } = useTranslation();
+  const brands = React.useMemo(() => getBrandItems(), []);
 
   return (
     <section className="brands-det-sec">
@@ -39,7 +56,7 @@ export const BrandsDetailGrid: React.FC = () => {
         <h2 className="brands-det-title">{t('brands_page.popular_title')}</h2>
         
         <div className="brands-det-grid">
-          {popularBrands.map((brand) => (
+          {brands.map((brand) => (
             <div key={brand.id} className="brand-det-card">
               <div className="brand-det-card-img">
                 <img src={brand.image} alt={brand.name} />
